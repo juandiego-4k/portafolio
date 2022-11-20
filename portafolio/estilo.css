@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.wraper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32 ;
+    color: #FFF;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand{
+    margin-top: -7px;
+}
+.brand span{
+ color: aqua;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li{
+    list-style: none;
+
+}
+
+.menu a{
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+
+.menu .active{
+    color: aqua;
+}
+
+.menu a:hover{
+background-color: aqua;
+color: black;
+transition: ease-in-out .3s;
+}
+
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.main span{
+    color: aqua;
+}
+
+.main img{
+    width: 300px;
+    border: 7px solid aqua;
+    height: 300px;
+}
+
+.contenedor{
+    margin: auto;
+    width: 100%;
+}
+.caja_columna{
+    color: #f7f4ea;
+ background-color: #191c32;
+ position: relative;
+ text-align: center;
+ width: 98%;
+ height: 440px;
+ margin: 10px;
+}
+
+
+.caja_columna .texto{
+position: absolute;
+top: 15px;
+left: 15px;
+right: 15px;
+bottom: 15px;
+border: 2px solid #191c32;
+padding: 30px;
+}
+
+.caja_columna .texto h3{
+    font-size: 40px;
+    margin: 0 0 10px;
+
+}
+
+
+.caja_columna .texto ul{
+    font-size: 18px;
+    list-style: none;
+
+}
+
+.caja_columna .texto li{
+    color: #FFF;
+
+}
+svg,rect{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+
+}
+
+rect{
+    stroke: aqua;
+    stroke-width: 9;
+    stroke-dasharray: 400;
+    animation: animate 4s linear infinite;
+
+}
+
+.caja .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@keyframes animate{
+    0%{
+        stroke-dashoffset: 800;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@media(min-width:400px)
+{
+    .caja_columna{
+        width: 82%;
+        height: 400px;
+    }
+}
+
+@media(min-width:520px)
+{
+    .caja_columna{
+        width: 85%;
+        height: 320px;
+    }
+}
+
+@media(min-width:600px)
+{
+    .caja_columna{
+        width: 82%;
+        height: 270px;
+    }
+}
+
+@media(min-width:680px)
+{
+    .caja_columna{
+        width: 46%;
+        height: 460px;
+    }
+}
+
+@media(min-width:780px)
+{
+    .caja_columna{
+        width: 47%;
+        height: 350px;
+    }
+}
+
+@media(min-width:1034px)
+{
+    .contenedor{
+        width: 1024px;
+    }
+    .caja_columna{
+        width: 31%;
+        height: 480px;
+    }
+}
+
+
+.tarea{
+    height: 100px;
+    width: 100px;
+}
+
+
+.letra{
+    color: black;
+    text-align: center;
+}
